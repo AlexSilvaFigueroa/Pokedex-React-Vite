@@ -7,7 +7,7 @@ export const LayoutContainer = styled.div`
   flex-wrap: wrap;
   padding: 5rem 2rem 2rem 2rem;
   height: auto;
-  @media (max-width: 500px) {
+  @media (max-width: 612px) {
     justify-content: center;
   }
 `;

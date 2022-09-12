@@ -17,6 +17,7 @@ specifiers:
   gh-pages: ^4.0.0
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-infinite-scroll-hook: ^4.0.3
   react-is: '>= 16.8.0'
   styled-components: ^5.3.5
   typescript: ^4.6.4
@@ -34,6 +35,7 @@ dependencies:
   gh-pages: 4.0.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-infinite-scroll-hook: 4.0.3_react@18.2.0
   react-is: 18.2.0
   styled-components: 5.3.5_7i5myeigehqah43i5u7wbekgba
 
@@ -1547,6 +1549,24 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-infinite-scroll-hook/4.0.3_react@18.2.0:
+    resolution: {integrity: sha512-5B3YuWODFq9j2m1J+Shk24QR2WDV0U9oQAaxR8ddFge8oC8Ls54EmkQxwelOjyv1jub4bP0jjSK7v+fM5QwWmg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      react-intersection-observer-hook: 2.0.4_react@18.2.0
+    dev: false
+
+  /react-intersection-observer-hook/2.0.4_react@18.2.0:
+    resolution: {integrity: sha512-bBZSuv5+CNAH3eA5U52McmkR/Obn23igBL3/MuYzlRvALrweSxqvT35cwWnaFkqUh6SjvYRfJncDpaqejAr9oA==}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-is/16.13.1:

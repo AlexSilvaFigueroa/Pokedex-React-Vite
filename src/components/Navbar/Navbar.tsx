@@ -47,15 +47,19 @@ export const Navbar = () => {
     <>
       <AppBar position="fixed" color="default">
         <Toolbar>
-          <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
+          {/* TODO: title on functional search*/}
+          {/* <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
             My Pokedex
+          </Typography> */}
+          <Typography variant="h6" noWrap component="div" sx={{ width: "100%" }} align="center">
+            Alex Dev | Pokedex
           </Typography>
-          <Search>
+          {/* <Search>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase placeholder="Search…" inputProps={{ "aria-label": "search" }} />
-          </Search>
+          </Search> */}
         </Toolbar>
       </AppBar>
     </>

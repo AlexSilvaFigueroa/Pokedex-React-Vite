@@ -1,4 +1,4 @@
-import { IBasePokemonData, Type } from "@/models";
+import { Type } from "@/models";
 import { pokemonTypeColor } from "../utilities";
 
 const baseUrl = "https://pokeapi.co/api/v2";
@@ -10,12 +10,14 @@ const requestConfig = {
   },
 };
 
-export const getPokemonsCollection = async ({ limit = 150, offset = 0 }) => {
+const INITIAL_PAGE = 0;
+
+export const getPokemonsCollection = async ({ limit = 10, page = INITIAL_PAGE }) => {
   try {
-    const response = await fetch(`${baseUrl}/pokemon?limit=${limit}&offset=${offset}`, requestConfig);
+    const response = await fetch(`${baseUrl}/pokemon?limit=${limit}&offset=${page * limit}}`, requestConfig);
     if (response.ok) {
       const result = await response.json();
-      return result;
+      return result.results;
     }
   } catch (err) {
     console.error(err);

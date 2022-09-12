@@ -73,7 +73,7 @@ const Card: React.FC<CardInteface> = ({ name, url }) => {
                       key={index + id}
                       variant="outlined"
                       size="small"
-                      label={t.type.name}
+                      label={capitalizeFirstLetter(t.type.name)}
                       sx={{
                         padding: "4px",
                         "&.MuiChip-colorPrimary": {
@@ -94,7 +94,7 @@ const Card: React.FC<CardInteface> = ({ name, url }) => {
           </CardActions>
         </MuiCard>
       ) : (
-        <Skeleton height={350} width={250} variant="rounded" />
+        <Skeleton height={350} width={250} variant="rounded" sx={{ paddingBottom: "5px" }} />
       )}
     </>
   );
